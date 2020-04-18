@@ -8,7 +8,7 @@
 ### 1.介绍几何数据类型
 二维地图可以通过三种基本几何对象来组成：点、线串、多边形。
 
-![](imgs/1_1_plp.png)  
+![基本几何类型](imgs/1_1_plp.png)  
 
 仅仅使用这三种对象，你就能在二维空间对任何东西建模。  
 ## 2、建模
@@ -227,7 +227,7 @@ geography column选中即可。
 	GROUP BY ft.franchise_name					-- 对查找出的结果，按照快餐店名字分组
 	ORDER BY tot DESC;							-- 按照出现次数降序排序
 查询的结果如下：  
-![](imgs/1_6_1mile_res.png)
+![查询结果](imgs/1_6_1mile_res.png)
 
 #### 2）哪条高速公路在半英里半径内，有最多数量的快餐店
 
@@ -240,7 +240,7 @@ geography column选中即可。
 	ORDER BY tot DESC							-- 按照出现次数降序排序
 	LIMIT 5;									-- 这里只给出前5条高速公路
 查询的结果如下：  
-![](imgs/1_6_most_res.png)
+![查询结果](imgs/1_6_most_res.png)
 结果中的null是没问题的，因为有些高速公路就是没有名字数据的。
 
 ### 2、使用OpenJUMP可视化数据
